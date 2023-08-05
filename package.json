@@ -1,0 +1,32 @@
+{
+  "name": "roting",
+  "version": "1.0.0",
+  "description": "react_routin",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakkarenukadevi/React_routing.git"
+  },
+  "keywords": [
+    "routin"
+  ],
+  "author": "renukadevi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakkarenukadevi/React_routing/issues"
+  },
+  "homepage": "https://github.com/nakkarenukadevi/React_routing#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
+   
+  }
+}
