@@ -3,13 +3,22 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./Header";
 import Body from "./Body";
+import "./App.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import About from "./About";
+import Contact from "./Contact";
+import { Provider } from "react-redux";
+import Appstore from "./utils/Appstore";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Outlet />
-    </>
+    <Provider store={Appstore}>
+      <>
+        <Header />
+
+        <Outlet />
+      </>
+    </Provider>
   );
 };
 
@@ -20,8 +29,16 @@ let router = createBrowserRouter([
 
     children: [
       {
-        path: "body",
+        path: "/",
         element: <Body />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },
